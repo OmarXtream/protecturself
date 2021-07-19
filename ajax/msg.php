@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 		$post = http_build_query(
 			array (
 				'response' => $_POST['g-recaptcha-response'],
-				'secret' => '6Le-GMAUAAAAAEvK0JF6yQwW3zW1anicGfuzGYtq',
+				'secret' => '',
 				'remoteip' => $_SERVER['REMOTE_ADDR']
 			)
 		);
