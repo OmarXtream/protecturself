@@ -1,0 +1,229 @@
+/* start main */
+@font-face {
+  font-family: "JF Flat Regular";
+  src: url('../fonts/JF-Flat-regular.eot');
+  src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+  url('../fonts/JF-Flat-regular.woff') format('woff'),
+  url('../fonts/JF-Flat-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.english-text {
+  font-family: "roboto", sans-serif, arial;
+  text-align: left;
+  direction: ltr;
+}
+
+body {
+  background-color: #fafafa !important;
+  font-family: "JF Flat Regular", "roboto", sans-serif, arial;
+  color: #0e1111;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-light {
+  background-color: #fafafa !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.preload {
+  position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background-color: #fafafa;
+  animation-duration: .5s
+}
+
+.line {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #4b9cdb;
+}
+
+.line:nth-last-child(1) {animation: loadingC .6s .1s linear infinite;}
+.line:nth-last-child(2) {animation: loadingC .6s .2s linear infinite;}
+.line:nth-last-child(3) {animation: loadingC .6s .3s linear infinite;}
+
+@keyframes loadingC {
+    0 {transform: translate(0,0);}
+    50% {transform: translate(0,15px);}
+    100% {transform: translate(0,0);}
+}
+/* end main */
+
+
+/* --------------------------------------- */
+
+/* start nav */
+
+.navbar {
+  padding: .8rem 1rem;
+}
+
+.nav-link {
+  color: inherit !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  font-size: 1.05rem !important;
+  font-weight: normal;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  color: inherit !important;
+  font-size: 1.4rem !important;
+}
+
+/* end nav */
+
+/* --------------------------------------- */
+
+/* start slider */
+.slider {
+  width: 100%;
+  background-image: url('../imgs/slider1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.slider .blackoverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.slider .text {
+  position: absolute;
+  z-index: 3;
+  padding: 32px;
+}
+
+.slider .text h1:last-of-type {
+  margin-bottom: 24px;
+}
+/* end slider */
+
+/* --------------------------------------- */
+
+/* start about */
+/* .about {
+  padding: 72px;
+}
+
+.about h2 {
+  position: relative;
+  width: auto;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.about h2::after, .about h2::before {
+  position: absolute;
+  content: "";
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 40%;
+  top: 24px;
+}
+
+.about h2::before {
+    left: -30px;
+}
+
+.about h2::after {
+    right: -30px;
+} */
+
+/* end about */
+
+/* --------------------------------------- */
+
+/* Start PageTitle */
+.PageTitle {
+  width: 100%;
+  background-image: url('../imgs/slider2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  position: relative;
+  color: #fff;
+  height: 192px;
+}
+
+.PageTitle .blackoverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  color: inherit;
+}
+
+.PageTitle .blackoverlay h2 {
+  margin: 0;
+}
+/* end PageTitle */
+
+/* --------------------------------------- */
+
+/* start PageContent */
+.PageContent {
+  padding: 32px 0;
+  line-height: 2em;
+}
+
+.PageContent p {
+  margin-bottom: 1.25em;
+}
+
+.PageContent form .form-row .form-group {
+  padding: 5px 16px !important;
+}
+
+.PageContent form .form-row .form-group input#passRes {
+  color: #d9534f;
+}
+/* end PageContent */
+
+/* --------------------------------------- */
+
+/* start footer */
+.footer {
+  padding: 16px;
+  background-color: #6B7172;
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer p a {
+  color: inherit;
+  font-weight: bold;
+}
+/* end footer */
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* --------------------------------------- */
